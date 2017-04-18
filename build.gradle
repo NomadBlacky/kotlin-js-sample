@@ -22,6 +22,10 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
 }
 
+sourceSets {
+    main.kotlin.srcDir 'src/main/kotlin'
+}
+
 task wrapper(type: Wrapper) {
     gradleVersion = '3.5'
 }
